@@ -15,7 +15,7 @@ public class DemoTest1 {
 	
 	@Test
 	public void sub1(){
-		int a=20;
+		int a=30;
 		int b=10;
 		Assert.assertEquals(10, a-b);
 	}
