@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_Maven_Suite">
-              <span class="suite-name border-passed">Test Maven Suite</span>
+              <span class="suite-name border-failed">Test Maven Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_Maven_Suite" class="hide-methods failed suite-Test_Maven_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_Maven_Suite -->
+                      <a href="#" panel-name="suite-Test_Maven_Suite" class="show-methods failed suite-Test_Maven_Suite"> (show)</a> <!-- show-methods failed suite-Test_Maven_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_Maven_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Maven_Suite" title="com.qa.tests.DemoTest1" hash-for-method="excelDataValidate">excelDataValidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_Maven_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-Test_Maven_Suite" class="show-methods passed suite-Test_Maven_Suite"> (show)</a> <!-- show-methods passed suite-Test_Maven_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Test_Maven_Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Maven_Suite" title="com.qa.tests.DemoTest1" hash-for-method="excelDataValidate">excelDataValidate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test_Maven_Suite" title="com.qa.tests.DemoTest" hash-for-method="sub">sub</a> <!-- method navigator-link -->
@@ -137,6 +146,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Maven_Suite" class="panel Test_Maven_Suite">
+          <div class="suite-Test_Maven_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.tests.DemoTest1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="excelDataValidate">
+                  </a> <!-- excelDataValidate -->
+                  <span class="method-name">excelDataValidate</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [user2] but found [user1]
+	at com.qa.tests.DemoTest1.excelDataValidate(DemoTest1.java:32)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Maven_Suite-class-failed -->
           <div class="suite-Test_Maven_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -165,13 +193,6 @@
               <span class="class-name">com.qa.tests.DemoTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="excelDataValidate">
-                  </a> <!-- excelDataValidate -->
-                  <span class="method-name">excelDataValidate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="sub1">
@@ -248,28 +269,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'excelDataValidate')
 data.setCell(0, 2, 'com.qa.tests.DemoTest1')
-data.setCell(0, 3, 446);
+data.setCell(0, 3, 450);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'sub')
 data.setCell(1, 2, 'com.qa.tests.DemoTest')
 data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'sub1')
+data.setCell(2, 1, 'sum1')
 data.setCell(2, 2, 'com.qa.tests.DemoTest1')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'sum')
-data.setCell(3, 2, 'com.qa.tests.DemoTest')
+data.setCell(3, 1, 'sub1')
+data.setCell(3, 2, 'com.qa.tests.DemoTest1')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'sum1')
-data.setCell(4, 2, 'com.qa.tests.DemoTest1')
+data.setCell(4, 1, 'sum')
+data.setCell(4, 2, 'com.qa.tests.DemoTest')
 data.setCell(4, 3, 0);
 window.suiteTableData['Test_Maven_Suite']= { tableData: data, tableDiv: 'times-div-Test_Maven_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 452 ms</span>
+              <span class="suite-total-time">Total running time: 457 ms</span>
               <div id="times-div-Test_Maven_Suite">
               </div> <!-- times-div-Test_Maven_Suite -->
             </div> <!-- times-div -->
@@ -308,16 +329,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.DemoTest1</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">excelDataValidate</span>
                 <span class="method-start">9 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sub1</span>
-                <span class="method-start">455 ms</span>
+                <span class="method-start">513 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum1</span>
-                <span class="method-start">456 ms</span>
+                <span class="method-start">513 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

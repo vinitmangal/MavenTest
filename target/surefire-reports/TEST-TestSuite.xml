@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.128" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.151" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\vinit\AppData\Local\Temp\surefire551367718524550057\surefirebooter2433676083018795303.jar C:\Users\vinit\AppData\Local\Temp\surefire551367718524550057 2018-11-10T10-43-13_270-jvmRun1 surefire7510356577358353312tmp surefire_08276224389908662976tmp"/>
+    <property name="sun.java.command" value="C:\Users\vinit\AppData\Local\Temp\surefire5114662483120889491\surefirebooter8453249162979035949.jar C:\Users\vinit\AppData\Local\Temp\surefire5114662483120889491 2018-11-10T11-13-44_338-jvmRun1 surefire3887622120020477209tmp surefire_08022297737024836310tmp"/>
     <property name="surefire.test.class.path" value="D:\Java_training\programms_WS\MavenDemoTest\target\test-classes;D:\Java_training\programms_WS\MavenDemoTest\target\classes;C:\Users\vinit\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\vinit\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\vinit\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi\3.11\poi-3.11.jar;C:\Users\vinit\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi-ooxml\3.11\poi-ooxml-3.11.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.11\poi-ooxml-schemas-3.11.jar;C:\Users\vinit\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\vinit\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\vinit"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\vinit\AppData\Local\Temp\surefire551367718524550057\surefirebooter2433676083018795303.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vinit\AppData\Local\Temp\surefire5114662483120889491\surefirebooter8453249162979035949.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,7 +62,13 @@
   </properties>
   <testcase name="sub" classname="com.qa.tests.DemoTest" time="0.007"/>
   <testcase name="sum" classname="com.qa.tests.DemoTest" time="0"/>
-  <testcase name="excelDataValidate" classname="com.qa.tests.DemoTest1" time="0.446"/>
-  <testcase name="sub1" classname="com.qa.tests.DemoTest1" time="0.001"/>
+  <testcase name="excelDataValidate" classname="com.qa.tests.DemoTest1" time="0.503">
+    <failure message="expected [user2] but found [user1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [user2] but found [user1]
+	at com.qa.tests.DemoTest1.excelDataValidate(DemoTest1.java:32)
+</failure>
+    <system-out><![CDATA[D:\Java_training\programms_WS\MavenDemoTest
+]]></system-out>
+  </testcase>
+  <testcase name="sub1" classname="com.qa.tests.DemoTest1" time="0"/>
   <testcase name="sum1" classname="com.qa.tests.DemoTest1" time="0"/>
 </testsuite>

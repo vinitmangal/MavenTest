@@ -29,6 +29,6 @@ public class DemoTest1 {
 		System.out.println(System.getProperty("user.dir"));
 		ReadMyExcelConfig excel = new ReadMyExcelConfig(System.getProperty("user.dir")+"\\MyTestData.xlsx");
 		
-		Assert.assertEquals(excel.getData("LoginDetail", 0, 0),"user1");
+		Assert.assertEquals(excel.getData("LoginDetail", 0, 0),"user2");
 	}
 }
