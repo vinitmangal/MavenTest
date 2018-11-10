@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2.028" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.128" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Java_training\programms_WS\MavenDemoTest\target\test-classes;D:\Java_training\programms_WS\MavenDemoTest\target\classes;C:\Users\vinit\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\vinit\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\vinit\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;"/>
+    <property name="java.class.path" value="D:\Java_training\programms_WS\MavenDemoTest\target\test-classes;D:\Java_training\programms_WS\MavenDemoTest\target\classes;C:\Users\vinit\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\vinit\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\vinit\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi\3.11\poi-3.11.jar;C:\Users\vinit\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi-ooxml\3.11\poi-ooxml-3.11.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.11\poi-ooxml-schemas-3.11.jar;C:\Users\vinit\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\vinit\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\vinit\AppData\Local\Temp\surefire6085703298086952360\surefirebooter8221421122152872695.jar C:\Users\vinit\AppData\Local\Temp\surefire6085703298086952360 2018-11-05T12-08-17_813-jvmRun1 surefire825365872262019953tmp surefire_03072674917087683982tmp"/>
-    <property name="surefire.test.class.path" value="D:\Java_training\programms_WS\MavenDemoTest\target\test-classes;D:\Java_training\programms_WS\MavenDemoTest\target\classes;C:\Users\vinit\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\vinit\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\vinit\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;"/>
+    <property name="sun.java.command" value="C:\Users\vinit\AppData\Local\Temp\surefire551367718524550057\surefirebooter2433676083018795303.jar C:\Users\vinit\AppData\Local\Temp\surefire551367718524550057 2018-11-10T10-43-13_270-jvmRun1 surefire7510356577358353312tmp surefire_08276224389908662976tmp"/>
+    <property name="surefire.test.class.path" value="D:\Java_training\programms_WS\MavenDemoTest\target\test-classes;D:\Java_training\programms_WS\MavenDemoTest\target\classes;C:\Users\vinit\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\vinit\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\vinit\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi\3.11\poi-3.11.jar;C:\Users\vinit\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi-ooxml\3.11\poi-ooxml-3.11.jar;C:\Users\vinit\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.11\poi-ooxml-schemas-3.11.jar;C:\Users\vinit\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\vinit\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\vinit"/>
     <property name="user.language" value="en"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\vinit\AppData\Local\Temp\surefire6085703298086952360\surefirebooter8221421122152872695.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vinit\AppData\Local\Temp\surefire551367718524550057\surefirebooter2433676083018795303.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Git\cmd;D:\softwares\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\vinit\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_181/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_181/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_181/bin/../jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Git\cmd;D:\softwares\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\vinit\AppData\Local\Microsoft\WindowsApps;;D:\softwares\eclipse-jee-neon-3-win32-x86_64\eclipse;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.181-b13"/>
@@ -60,8 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="sub" classname="com.qa.tests.DemoTest" time="0.011"/>
+  <testcase name="sub" classname="com.qa.tests.DemoTest" time="0.007"/>
   <testcase name="sum" classname="com.qa.tests.DemoTest" time="0"/>
-  <testcase name="sub1" classname="com.qa.tests.DemoTest1" time="0"/>
-  <testcase name="sum1" classname="com.qa.tests.DemoTest1" time="0.001"/>
+  <testcase name="excelDataValidate" classname="com.qa.tests.DemoTest1" time="0.446"/>
+  <testcase name="sub1" classname="com.qa.tests.DemoTest1" time="0.001"/>
+  <testcase name="sum1" classname="com.qa.tests.DemoTest1" time="0"/>
 </testsuite>
